@@ -6,7 +6,9 @@ import {scale} from 'react-native-size-matters';
 import moment from 'moment';
 import ScreenComponent from './ScreenComponent';  
 import logoImg from '../images/broke.png';
-import colors from  '../../colors'
+import colors from  '../../colors';
+
+import {Actions, ActionConst} from 'react-native-router-flux';
 
 // import PropTypes from 'prop-types';
 
@@ -123,6 +125,7 @@ const CalenderBookingScreen = (props) => {
                     }}
                 />
                <View>{renderAppointments()}</View>
+               <TouchableOpacity onPress={() =>  Actions.BookingScreen()} style={styles.add}><Text style={{fontSize: 45, color: "white", fontWeight: "bold"}}>+</Text></TouchableOpacity>
             </CalendarProvider>
 
          
@@ -149,6 +152,17 @@ const styles = StyleSheet.create({
         borderBottomWidth: 2,
         borderColor: '#eee',
     },
+    add:{  borderWidth:1,
+      borderColor:'rgba(0,0,0,0.2)',
+      alignItems:'center',
+      justifyContent:'center',
+      width:60,
+      position: 'absolute',                                          
+      bottom: 10,                                                    
+      right: 10,
+      height:60,
+      backgroundColor: "#03bafc",
+      borderRadius:100},
   container: {
     flex: 1,
   },

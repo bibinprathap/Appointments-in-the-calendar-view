@@ -5,6 +5,7 @@ import LoginScreen from './LoginScreen';
 //import SecondScreen from './SecondScreen';
 
 import CalenderBookingScreen from './CalenderBookingScreen';
+import BookingScreen from './BookingForm';
 
 export default class Main extends Component {
   render() {
@@ -19,6 +20,11 @@ export default class Main extends Component {
 	        />
 	        <Scene key="secondScreen"
 	          component={CalenderBookingScreen}
+	          animation='fade'
+	          hideNavBar={true}
+	        />
+			      <Scene key="BookingScreen"
+	          component={BookingScreen}
 	          animation='fade'
 	          hideNavBar={true}
 	        />

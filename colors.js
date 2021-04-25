@@ -1,0 +1,33 @@
+
+const colors = {
+    primary: '#f3f3f3',
+    primaryDark: '#125183',
+    primaryDark1: '#2E384D',
+    white: '#fff',
+    bottombarBg: '#fafafa',
+    headerColor: '#1b75bc',
+    headerTextColor: '#FFFF',
+    active: '#1b75bc',
+    defaultBg: '#f3f4f6',
+    inactive: 'black',
+    indicator: '#24277e',
+    borderTopColor: '#dedede',
+    red: '#FF0000',
+    redDrank: '#B6292B',
+    blueOpacity: 'rgba(27, 117, 188, 0.5)',
+    yellow: '#FFFF00',
+    tomato: '#EA4335',
+    gray: '#707070',
+    blue: '#0089CE',
+    greySeat: '#919090',
+    blueCalender: '#211551',
+    grey: '#333333',
+    greyLight: '#898989',
+    greyOpacity: 'rgba(51,51,51, 0.8)',
+    purpleLight: '#AF4A92',
+    blackOpacity: 'rgba(0,0,0, 0.8)',
+    // green: '#00FF00',
+    green: 'green',
+    black : "#000000"
+  };
+  export default colors;
